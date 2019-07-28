@@ -57,7 +57,7 @@ router.get('/delete',async (ctx,next)=>{
             }
         })
         ctx.body = success('删除成功')
-    } catch {
+    } catch(e) {
         ctx.body = error('发生错误')
     }
 })
